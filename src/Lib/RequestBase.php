@@ -16,6 +16,8 @@ class RequestBase
 
     const APP_SECRET = '3270064d0afe3be41ae838cd9e667b1c';
 
+    const HOST = '';
+
     private $postData = [];
 
 
@@ -43,7 +45,7 @@ class RequestBase
     {
         if(empty($this->postData)) {
             $this->postData = [
-                'host' => env('HOST',$this->host),
+                'host' => env('HOST',self::HOST),
                 'data' => [
                     'head' => '',
                     'app_id' => config('api.APP_ID',self::APP_ID),
