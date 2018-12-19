@@ -1,0 +1,29 @@
+{
+    "name": "onmpw/jiyirequest",
+    "description": "Request your server.",
+    "version":"v1.0.0",
+    "homepage":"https://github.com/onmpw/jiyirequest.git",
+    "authors": [
+        {
+            "name": "迹忆",
+            "email": "jiyi_onmpw@163.com",
+            "homepage":"https://www.onmpw.com"
+        }
+    ],
+    "require": {
+        "predis/predis":"^1.1"
+    },
+    "autoload":{
+        "psr-4":{"Onmpw\\JiyiLog\\":"src"}
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "Onmpw\\JiyiLog\\JiyiLogServiceProvider"
+            ],
+            "aliases":{
+
+            }
+        }
+    }
+}
